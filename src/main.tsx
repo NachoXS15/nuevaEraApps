@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './pages/App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Ruleta from './pages/Ruleta.tsx'
+import Memory from './pages/Memory/Memory.tsx'
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,12 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
+    path: '/memory-game',
+    element: <Memory />
+  },
+  {
     path: '/ruleta',
-    element: <Ruleta />
+    element: <Memory />
   },
 ])
 createRoot(document.getElementById('root')!).render(
