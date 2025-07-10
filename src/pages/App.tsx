@@ -6,9 +6,9 @@ import CardD from '../components/CardD'
 export default function App() {
 
     const dCards = [
-        {link: "/ruleta", img: "/assets/svg/brain.svg", title: "Ruleta"},
-        {link: "/memory-game", img: "/assets/svg/spin.svg", title: "Juego de la Memoria"},
-        {link: "/dashboard", img: "/assets/svg/brain.svg", title: "Dashboard"},
+        {link: "/ruleta", img: "/assets/svg/spin.svg", title: "Ruleta"},
+        {link: "/memory-game", img: "/assets/svg/brain.svg", title: "Juego de la Memoria"},
+        {link: "/map", img: "/assets/svg/map.svg", title: "Mapa Interactivo"},
     ]
 
     return (

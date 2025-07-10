@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import dorso from '../../public/assets/cards/Dorso.webp'
+import dorso from '../assets/Dorso.webp'
 import ReactCardFlip from 'react-card-flip';
 import type CardProps from '../config/CardProps';
 export default function Card({ cardName, flipCards, img, index, unFlippedCards, disabledCards }: CardProps) {

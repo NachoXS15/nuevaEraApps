@@ -4,6 +4,8 @@ import cards from "../../config/Cards";
 import getPhrase from './getPhrase';
 import Card from '../../components/CardM';
 import { NavLink } from "react-router-dom";
+import Header from "../../components/Header";
+
 
 export default function MemoryGame() {
 	const [cardsA, setCardsA] = useState<CardProps[]>([]);
@@ -117,12 +119,13 @@ export default function MemoryGame() {
 
 	return (
 		<>
-			<div className="w-full min-h-screen bg-cyan-500 flex items-center justify-center bg-center bg-cover bg-no-repeat">
+			<Header />
+			<div className="w-full mt-20 bg-white flex items-center justify-center bg-center bg-cover bg-no-repeat">
 				<div className='w-10/12 mt-5  bg-opacity-40 rounded-md relative'>
 				{/* <NavLink to="/" className="transition active:scale-105 text-white font-bold text-5xl absolute top-10 right-5">X</NavLink> */}
-				<NavLink to="/" className="transition active:scale-105 text-white font-bold text-5xl absolute top-10 left-5">{"<-"}</NavLink>
+				<NavLink to="/" className="transition active:scale-105 text-black font-bold text-5xl absolute top-10 left-5">{"X"}</NavLink>
 					<div className="w-full h-fit flex flex-col gap-10 justify-between items-center text-white font-bold">
-						<h1 className='text-6xl text-center mt-10 mb-2 underline'>Juego de la Memoria</h1>
+						<h1 className='text-6xl text-center mt-10 mb-2 text-black underline'>Juego de la Memoria</h1>
 						<div className='w-3/5 h-3/5 flex flex-wrap items-center justify-center'>
 							{cardsA.map((card, index) => (
 								<Card
@@ -137,8 +140,8 @@ export default function MemoryGame() {
 							))}
 						</div>
 						<div className='w-full flex justify-around mt-4'>
-							<h2 className='text-4xl pb-10 pr-10'>Tiempo restante: <span className={`${timeLeft < 30 ? "text-red-600" : "text-white"}`}>{timeLeft}</span>s</h2>
-							<h2 className='text-4xl pb-10 pr-10'>Puntuacion: {score}/11</h2>
+							<h2 className='text-4xl pb-10 pr-10 text-black'>Tiempo restante: <span className={`${timeLeft < 30 ? "text-red-600" : "text-black"}`}>{timeLeft}</span>s</h2>
+							<h2 className='text-4xl pb-10 pr-10 text-black'>Puntuacion: {score}/11</h2>
 						</div>
 					</div>
 				</div>
