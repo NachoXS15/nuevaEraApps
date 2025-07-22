@@ -5,8 +5,8 @@ type Props = {
 
 export default function GraphCol({month}: Props) {
     return (
-        <div className="h-5/6 w-20 rounded-lg flex items-center flex-col">
-            <div className="rounded-lg h-full w-full">
+        <div className="h-5/6 w-20 rounded-lg flex gap-2 items-center flex-col">
+            <div className="rounded-lg h-full w-full flex flex-col-reverse">
                 <div className="h-3/12 w-full bg-blue-600"></div>
                 <div className="h-2/12 w-full bg-green-600"></div>
                 <div className="h-2/12 w-full bg-yellow-600"></div>
