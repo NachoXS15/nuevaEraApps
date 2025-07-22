@@ -9,6 +9,7 @@ export default function App() {
         {link: "/ruleta", img: "/assets/svg/spin.svg", title: "Ruleta"},
         {link: "/memory-game", img: "/assets/svg/brain.svg", title: "Juego de la Memoria"},
         {link: "/map", img: "/assets/svg/map.svg", title: "Mapa Interactivo"},
+        {link: "/dashboard", img: "/assets/svg/map.svg", title: "Dasboard"}
     ]
 
     return (

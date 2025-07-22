@@ -33,6 +33,10 @@ const router = createBrowserRouter([
     path: '/map/west',
     element: <Pages.West />
   },
+  {
+    path: '/dashboard',
+    element: <Pages.Dashboard />
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(
